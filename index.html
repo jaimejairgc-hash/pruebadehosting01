@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="C:\Users\jairw\Documents\TareasArchivosTemporales\DISEÑO_WEB\PARCIAL_02\CODIGOS\ElUniversoDeLosEsquemas_2\respaldo\img\ISOLOGO_DISEÑOWEB_parasubir.ico" rel="ISOLOGO_DISEÑOWEB_parasubir">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+    @import url('https://fonts.google.com/specimen/Cal+Sans?categoryFilters=Feeling:%2FExpressive%2FCalm');
+    @import url('https://fonts.google.com/specimen/Quicksand?categoryFilters=Feeling:%2FExpressive%2FCalm');
+    @import url('https://fonts.google.com/specimen/Poiret+One?categoryFilters=Feeling:%2FExpressive%2FCalm');
+    
+
+        *{    /*quitar márgenes automáticos, quitar padding por defecto*/
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+    header{
+            max-width: 2000px; /*LA MAXIMA ANCHURA DE LA PAGINA AL MOSTRARSE EN CUALQUIER LADO*/
+            margin: 0 auto;
+            min-height: 100vh;  /*el elemento tendrá como mínimo la altura completa de la pantalla*/
+            padding-top: 30px;
+             }
+    body{
+ background: linear-gradient(180deg,#1e1e1e 0%, #002930 80%);
+            } 
+            
+    .encabezado{
+            margin-top: -460px; /* ALTURA A LA CUAL ACOMODAR DESPUES DEL HEADER*/
+            background-color: #00000063;
+            max-width: 2000px;
+            height:85px;
+            margin-left: auto;
+            margin-right: auto; /* CENTRAR SECCION*/
+            padding: 15px;
+            /*border-radius: 20px 20px 20px 20px;
+            border: 1px solid #ffffff;*/
+            }
+    
+    .tabla {
+           /* column-count: 3;  CANTIDAD COLUMNAS
+            column-gap: 35px;  ESPACIO MEDIANILES
+            column-rule: 3px solid #dcf2f4;*/
+            padding-top: 20px;
+            padding-right: 40px;
+            padding-left: 40px;
+             margin-bottom: 15px;
+              display:flex; /*CREAR TABLA DE COLUMNAS*/
+            gap:35px; /*ESPACIO MEDIANILES*/
+}
+            
+    .columna{
+            flex:1;
+            }
+            
+            .columna img{
+            width: 100%;
+            }
+
+    .seccionImagen{
+            margin-top: auto;
+            background-color: #000000;
+    }
+
+    .cuerpoPrincipal{
+        
+         padding-top: 20px;
+         padding-right: 40px;
+         padding-left: 40px;
+    }
+
+    
+    .p2{
+        text-indent: 40px; /* SANGRÍA PRIMERA LINEA*/
+    }
+
+    h1{
+
+            color: #8df9d0;
+            text-align: center;
+            font-size: 120px;
+            line-height: 0.8; /* INTERLINEADO*/
+            font-family: "Cal Sans";
+            
+            }
+
+    h2{
+
+            color: #dcf2f4;
+            text-align: center;
+            font-size: 25px;
+            line-height: 1;
+            font-family: "Poiret One";
+            }
+
+            h3{
+
+            color: #8df9d0;
+            text-align: left;
+            font-size: 40px;
+            font-family: "Cal Sans";
+            margin-bottom: 5px;
+            }
+    h4{
+
+            color: #8df9d0;
+            text-align: center;
+            font-size: 20px;
+            font-family: "Cal Sans";
+            }
+
+            h5{
+
+            color: #e2e2e2;
+            text-align: justify;
+            font-size: 20px;
+            line-height: 1.25;
+            font-family: "Poiret One";
+            }
+
+            h6{
+
+            color: #e2e2e2;
+            text-align: justify;
+            font-size: 15px;
+            line-height: 1.25;
+            font-family: "Poiret One";
+             margin-bottom: 8px;
+            }
+    .img01
+        { 
+           display: block;
+           margin: auto;
+           width: 2000 px;
+        }
+    .img02
+        { 
+           display: block;
+           margin: auto;
+          width: auto;
+        height: auto;
+        border: 5px solid #474747;
+        box-shadow: 10px 10px 5px 0px #bcfff5;
+        }
+    .img03
+        { 
+           display: block;
+           margin: auto;
+          width: auto;
+        height: auto;
+         border: 5px solid #474747;
+        box-shadow: 10px 10px 5px 0px #bcfff5;
+        }
+    .img04
+        { 
+           display: block;
+           margin: auto;
+           width: auto;
+        height: auto;
+         border: 5px solid #474747;
+        box-shadow: 10px 10px 5px 0px #bcfff5;
+        }
+
+         #navbar {
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            background-color: #003827;
+            text-align: center;
+        }
+        .bInicio{
+            color: #e2e2e2;
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.25;
+            font-family: "Poiret One";
+        }
+
+        .bContacto{
+            color: #e2e2e2;
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.25;
+            font-family: "Poiret One";
+        }
+        .bFinal{
+            color: #e2e2e2;
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.25;
+            font-family: "Poiret One";
+        }
+
+        .fixed {
+            width: 50px;
+            height: 100px;
+            position: fixed;
+            top: 300px;
+            right: 0;
+            background-color: rgb(201, 255, 201);
+        }
+
+        .estatico {
+            width: 150px;
+            height: 50px;
+            position: static;
+            background-color: gray;
+        }
+ 
+        .img05
+        { 
+           display: block;
+           margin-top: 20px;
+           margin-left: 15px;
+           width: 25px;
+           height: 25px;
+        }
+        .img06
+        { 
+           display: block;
+           margin-top: 20px;
+           margin-left: 15px;
+           width: 25px;
+           height: 25px;
+        }
+
+        .img07
+        { 
+           display: block;
+           margin-top: 25px;
+           margin-left: 15px;
+           width: 25px;
+           height: 25px;
+        }
+
+          #final {
+            background-color: #003827;
+            margin: 10px;
+             max-width: 2000px;
+            height:85px;
+        }
+
+</style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <a href="" class="bInicio">Inicio</a>
+        <a href="" class="bContacto">Contacto</a>
+        <a href="#final" class="bFinal">Final</a>
+    </div>
+    
+    <div class="fixed">
+        <img class="img05"src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/960px-Facebook_f_logo_%282021%29.svg.png">
+        <img class="img07"src="https://e7.pngegg.com/pngimages/115/1008/png-clipart-instagram-application-logo-computer-icons-logo-instagram-miscellaneous-purple-thumbnail.png">
+    </div>
+
+    <div class="estatico">
+         <br>
+         <h2>¡Bienvenido!</h2>
+    
+</div>
+
+<header>
+            <h1>EL UNIVERSO DE <br> 
+                    LOS ESQUEMAS</h1>
+    </header>    
+
+        <section class="encabezado">
+            <h2> Los esquemas alcanzan todos los ámbitos de la vida cotidiana, sean técnicos o no. <br>
+Son simplificaciones de la realidad, que nos permiten entenderla y memorizarla.
+  </h2>
+        </section>
+        <section class="seccionImagen"> 
+    <img class="img01"src="https://www.experimenta.es/wp-content/uploads/2019/05/entrevista-joan-costa-maestro-diseno-comunicacion-corporativa-5.jpg">
+
+        </section>
+   
+        <div class="cuerpoPrincipal"> 
+
+            <h3> Explicar <em>esquemáticamente</em> </h3>
+             <p> <h5>Los esquemas no son nuevos; existen desde la prehistoria, p.e las pinturas de Altamira o Lascaux son abstracciones de la realidad, 
+            hasta el renacentismo con Leonardo da Vinci y sus dibujos técnicos y esquemáticos y posteriormente, la edad moderna y las revoluciones industriales 
+            hasta la actualidad en la era contemporánea; programadores y controladores y, gente común. </p> <br> 
+
+             <p class="p2">"<em>Abstracción, transparencia y superposiciones son características que comparten el arte prehistórico y los esquemas actuales. Diseñan acciones, procesos, 
+            explican; comunican: "el lenguaje esquemático se afirma cada día como el elemento esencial e insustituible de la gráfica didáctica</em>" (1998, Costa, p.26).
+            </p>
+            <br> 
+            Se ha llegado a un consenso en el que este universo se tipifica en 3 campos y cada uno de ellos se define por el lugar que ocupan sus funciones de la 
+            esquemática: utilidad, motivación de sus destinatarios y lenguajes gráficos.
+            </h5>
+        </div>
+
+        <article class="tabla">
+           
+            <div class="columna">
+            <h4><em>Ciencias</em></h4>
+                <h6> 
+                 Hechos para la investigación y divulgación, dirigido a téoricos, utilizando 
+			iconografía técnica y esquemas.
+            </h6>
+            <img class="img02"src="https://cdn.kastatic.org/ka-perseus-images/1392523f88de29cd2a8f7acbc7de5fb15e7cd19a.png">
+           </div>
+        
+           <div class="columna">
+            <h4><em>Técnicas</em></h4>
+            <h6>Para el aprendizaje autodidacta, desarrollo de estrategias e innovación; 
+		    dirigido a público en general, especialistas o expertos. Hay dibujos técnicos, esquemática, ilustraciones.
+            </h6>
+            <img class="img03"src="https://img.freepik.com/vector-gratis/tabla-periodica-infografica-realista_52683-89679.jpg">
+            </div>
+
+            <div class="columna">
+            <h4><em>Praxis cotidiana</em></h4>
+            <h6>Directo para el consumo, invención tecnológica; puede dirigirse  usuarios concretos, no especialistas o profesionales. 
+                Se utilizan imágenes utilitarias, gráficos o pictogramas.
+            </h6>
+            <img class="img03"src="https://i0.wp.com/blogdelblock.com/wp-content/uploads/2019/08/lego-mini-harley-davidson-mexico-1-1.jpg?resize=742.5%2C557&ssl=1">
+            </div>
+
+        </article>
+<footer id="final"></footer>    
+</body>
+</html>
